@@ -1,15 +1,14 @@
 ## log structured storage engine
 
-### Components
 
-#### Key-Value Pair
+### Key-Value Pair
 
 - Key
 - Value
 - Size (key size + value size)
 - Deleted (bool)
 
-#### MemTable
+### MemTable
 
 in-memory append-only log.  
 flushes to disk once capacity exceeds.  
@@ -25,3 +24,6 @@ flushes to disk once capacity exceeds.
 - flush (writes contents to SSTable)
 - clear (clears memtable)
 
+### SSTable
+- Size
+- 
