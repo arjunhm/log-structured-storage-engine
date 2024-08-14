@@ -25,5 +25,15 @@ flushes to disk once capacity exceeds.
 - clear (clears memtable)
 
 ### SSTable
-- Size
-- 
+
+holds flushed contents of memtable.  
+same size as memtable for now.  
+
+- Data (byte array)
+- index (maps key to byte offset)
+
+**operations**
+- create (stores memtable contents)
+- write (writes content to disk)
+- read (loads content from disk)
+

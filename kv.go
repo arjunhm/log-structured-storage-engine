@@ -20,7 +20,6 @@ func NewKeyValue(key, val string, del bool) *KeyValue {
 	return kv
 }
 
-
 func (kv *KeyValue) Display() {
-	fmt.Println(kv.Key + "-" + kv.Value);
+	fmt.Println(kv.Key + "-" + kv.Value)
 }
