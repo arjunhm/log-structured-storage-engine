@@ -9,7 +9,7 @@ type KeyValue struct {
 	Deleted bool
 }
 
-func NewKV(key, val string, del bool) *KeyValue {
+func NewKeyValue(key, val string, del bool) *KeyValue {
 	kv := &KeyValue{
 		Key:     key,
 		Value:   val,

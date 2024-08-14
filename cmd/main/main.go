@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	kv := lsm.NewKV("name", "jun", false)
+	kv := lsm.NewKeyValue("name", "jun", false)
 	fmt.Println(kv.Key, kv.Value);
 	kv.Display();
 }
